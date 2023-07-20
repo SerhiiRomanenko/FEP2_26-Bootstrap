@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-----------------------------------------------HEADER---------------------------------------->
+<header class="header">
+    <div class="header__container container container-fluid">
+        <a class="header__home" href="#">
+            <img class="header__logo" src="/images/icons/bootstrap-logo-shadow.png" alt="HOME">
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                   aria-expanded="false">MENU</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pizza</a></li>
+                    <li><a class="dropdown-item" href="#">Sushi</a></li>
+                    <li><a class="dropdown-item" href="#">Salads</a></li>
+                    <li><a class="dropdown-item" href="#">Burgers</a></li>
+                    <li><a class="dropdown-item" href="#">Soups</a></li>
+                    <li><a class="dropdown-item" href="#">Dessert</a></li>
+                    <li><a class="dropdown-item" href="#">Drink</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Firmed dishes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">STOCK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">RESTAURANTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">CONTACTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+        </ul>
+        <nav class="header__searchBlock navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="header__searchBTN btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-----------------------------------------------------------------MAIN----------------------------------------------->
+<main class="main">
+    <div class="main__container container container-fluid">
+        <section class="bootstrap">
+<!---------------------------------------------------------------BOOTSTRAP--------------------------------------------->
+            <h2 class="bootstrap__title h2">Bootstrap:</h2>
+            <p class="bootstrap__subtitle fw-normal">
+                - Вивести на сторінку кнопку (застосувати стилі бутстрапа) при натисканні на яку відкривається модальне
+                вікно з деякими даними:
+            </p>
+            <p class="bootstrap__subtitle fw-normal">
+                - Повісити на цю кнопку Tooltip із довільним текстом:
+            </p>
+            <!---------------------------------------TOOLTIP & MODAL BUTTON--------------------------------------------->
+            <button type="button" class="bootstrap__firstBTN btn btn-success custom-tooltip"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Натисни і з'виться модальне вікно Bootstrap!">                      <!----<--TOOLTIP BUTTON------->
+                <span data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tooltip & modal</span>   <!----<--MODAL BUTTON------->
+            </button>
+
+            <!-------------------------------------- Modal windows-------------------------------->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Bootstrap framework is really amazing in creating beautiful and responsive websites, it
+                            makes your work easier
+                            and faster- it has ready to use div’s, classes and every components and everything which is
+                            used to create beautiful and responsive websites.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------ALERT------------------------------------------------------>
+            <p class="bootstrap__subtitle fw-normal">
+                - Створити ще одну кнопку, при натисканні на яку показується бутстрапівський алерт. При повторному
+                натисканні - ховається:
+            </p>
+
+            <div id="liveAlertPlaceholder"></div>    <!----<<-here i create ALERT in js------------>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show / Close alert</button>   <!----<< SHOW/CLOSE ALERT BUTTON------------>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

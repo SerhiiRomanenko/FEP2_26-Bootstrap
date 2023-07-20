@@ -1,0 +1,42 @@
+.container {
+  padding: 12px; }
+
+.header {
+  background-color: #0D6EFD; }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__logo {
+    width: 60px;
+    height: 50px; }
+  .header__searchBlock {
+    margin-left: auto; }
+  .header__searchBTN {
+    background-color: #7510F7;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white; }
+    .header__searchBTN:hover {
+      background-color: cornflowerblue; }
+
+.nav-pills .nav-link {
+  color: aliceblue;
+  margin: 5px;
+  background-color: #0D6EFD; }
+  .nav-pills .nav-link:hover {
+    color: black; }
+
+.dropdown-menu.show {
+  background-color: #0D6EFD; }
+
+.dropdown-item {
+  color: bisque; }
+
+.btn-success {
+  padding: 0; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

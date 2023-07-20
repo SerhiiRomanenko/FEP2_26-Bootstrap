@@ -1,0 +1,57 @@
+.container {
+  padding: 12px;
+}
+
+.header {
+  background-color: #0D6EFD;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 50px;
+  }
+
+  &__searchBlock {
+    margin-left: auto
+  }
+
+  &__searchBTN {
+    background-color: #7510F7;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: cornflowerblue;
+    }
+  }
+}
+
+.nav-pills .nav-link {
+  color: aliceblue;
+  margin: 5px;
+  background-color: #0D6EFD;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.dropdown-menu.show {
+  background-color: #0D6EFD;
+}
+
+.dropdown-item {
+  color: bisque;
+}
+
+.btn-success {
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
