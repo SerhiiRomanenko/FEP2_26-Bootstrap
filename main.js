@@ -50,7 +50,7 @@ const regExp = /^(0[1-9]|[1-2]\d|3[0-1])_(0[1-9]|1[0-2])_(19\d{2}|20([0-1]\d|2[0
 if (regExp.test(newFormatInputDate)) {
     $userBDAY.innerHTML = `Дата народження <strong>"${inputDate}"<strong> введена коректно!`;
     $userBDAY.className = "text-success";
-} else if (inputDate === null) {
+} else if (inputDate === null || inputDate.trim() === '') {
     $userBDAY.innerHTML = `Ви не ввели дату народження =(`;
     $userBDAY.className = "text-danger";
 } else {
