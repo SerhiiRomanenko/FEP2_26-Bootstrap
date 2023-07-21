@@ -1,7 +1,9 @@
+
 .container {
   padding: 12px;
 }
 
+//-----------------------------------HEADER---------------------------------//
 .header {
   background-color: #0D6EFD;
 
@@ -30,6 +32,8 @@
   }
 }
 
+//-----------------------------------BOOTSTRAP SECTION---------------------------------//
+
 .nav-pills .nav-link {
   color: aliceblue;
   margin: 5px;
@@ -54,4 +58,9 @@
 
 .hidden {
   display: none;
+}
+
+//-----------------------------------MOMENT SECTION---------------------------------//
+.moment__birthday {
+  text-decoration: underline;
 }

@@ -60,14 +60,14 @@
 <main class="main">
     <div class="main__container container container-fluid">
         <section class="bootstrap">
-<!---------------------------------------------------------------BOOTSTRAP--------------------------------------------->
+<!--==============================================================BOOTSTRAP==============================================---->
             <h2 class="bootstrap__title h2">Bootstrap:</h2>
             <p class="bootstrap__subtitle fw-normal">
-                - Вивести на сторінку кнопку (застосувати стилі бутстрапа) при натисканні на яку відкривається модальне
+                1) Вивести на сторінку кнопку (застосувати стилі бутстрапа) при натисканні на яку відкривається модальне
                 вікно з деякими даними:
             </p>
             <p class="bootstrap__subtitle fw-normal">
-                - Повісити на цю кнопку Tooltip із довільним текстом:
+                2) Повісити на цю кнопку Tooltip із довільним текстом:
             </p>
             <!---------------------------------------TOOLTIP & MODAL BUTTON--------------------------------------------->
             <button type="button" class="bootstrap__firstBTN btn btn-success custom-tooltip"
@@ -100,20 +100,39 @@
             </div>
             <!---------------------------------------------ALERT------------------------------------------------------>
             <p class="bootstrap__subtitle fw-normal">
-                - Створити ще одну кнопку, при натисканні на яку показується бутстрапівський алерт. При повторному
+                3) Створити ще одну кнопку, при натисканні на яку показується бутстрапівський алерт. При повторному
                 натисканні - ховається:
             </p>
 
             <div id="liveAlertPlaceholder"></div>    <!----<<-here i create ALERT in js------------>
             <button type="button" class="btn btn-primary" id="liveAlertBtn">Show / Close alert</button>   <!----<< SHOW/CLOSE ALERT BUTTON------------>
+        </section>
+        <section class="moment">
+            <!--==============================================================MOMENT==============================================---->
+            <h2 class="moment_title h2">Moment:</h2>
+            <p class="moment__subtitle fw-normal">
+                4) Вивести дату вашого народження в довільному форматі з використанням moment.js:
+            </p>
+            <b class="moment__birthday fw-small"></b>
+            <p class="moment__subtitle fw-normal">
+                5) Отримати від користувача дату його народження в певному форматі і через moment.js перетворити в інший формат:
+            </p>
+            <p class="moment__subtitle fw-normal">
+                6) реалізувати перевірку (за допомогою регулярних виразів) на коректність користувацького введення (перевірити, що формат введення відповідає очікуванням):
+            </p>
+            <p class="moment__subtitle fw-normal">
+                7) якщо формат не відповідає - виводимо помилку (використовуємо bootstrap стилі):
+            </p>
+            <b class="moment__userBirthday fw-small"></b>
+
+
 
         </section>
-
     </div>
 
 </main>
 
-
+<script src="/libs/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

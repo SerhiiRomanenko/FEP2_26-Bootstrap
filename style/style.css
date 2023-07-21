@@ -39,4 +39,7 @@
 .hidden {
   display: none; }
 
+.moment__birthday {
+  text-decoration: underline; }
+
 /*# sourceMappingURL=style.css.map */
