@@ -1,6 +1,10 @@
 .container {
   padding: 12px; }
 
+.title {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
 .header {
   background-color: #0D6EFD; }
   .header__container {
